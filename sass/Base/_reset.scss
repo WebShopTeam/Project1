@@ -1,0 +1,42 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.2s;
+    color: var(--white);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+
+    &::-webkit-scrollbar{
+        width:1rem;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: var(--blue);
+    }
+    &::-webkit-scrollbar-track{
+        background-color: var(--black);
+    }
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--black);
+    height: 600rem;
+}
+@media screen and(max-width:991px){
+    html{
+        font-size: 55%;
+    }    
+}
+@media screen and(max-width:450px){
+    html{
+        font-size: 50%;
+    }    
+}

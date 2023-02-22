@@ -1,0 +1,9 @@
+:root{
+    --blue: #0097e6;
+    --black: #000;
+    --white: #fff;
+    --light-color: #aaa;
+    --light-bg: #0a0a0a;
+    --border: 0.1rem solid rgba(255,255,255,0.2);
+    
+}

@@ -1,0 +1,29 @@
+.contact{
+    form{
+        margin: 1rem auto;
+        max-width: 60rem;
+        text-align: center;
+        h3{
+            @include title-text(3rem);
+            margin-bottom: 1rem;
+        }
+        .box{
+            padding: 0 1rem;
+            border: none;
+           width: 100%;
+           padding: 1.5rem 0;
+           border-bottom: var(--border);
+           margin-bottom: 1rem;
+           color: var(--white);
+           font-size: 1.8rem;
+           background: none; 
+           &:focus{
+            border-color: var(--blue);
+           }
+        }
+        textarea{
+            height: 15rem;
+            resize: none;
+        }
+    }
+}

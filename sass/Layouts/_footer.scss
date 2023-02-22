@@ -1,0 +1,68 @@
+.footer{
+    background-color: var(--light-bg);
+    .box-container{
+        @include grid(25rem);
+        .box{
+            h3{
+                @include title-text(2.2rem);
+                padding-bottom:2rem;
+                padding-top: 1rem;
+            }
+            .link{
+                display: block;
+                color: var(--light-color);
+                padding: 1rem 0;
+                font-size: 1.5rem;
+                i{
+                    color: var(--blue);
+                    padding: 0.5rem;
+                }
+                &:hover{
+                    color: var(--blue);
+                    i{
+                        padding-right: 2rem;
+                    }
+                }
+            }
+            .email{
+                width: 100%;
+                padding: 1.2rem 1.4rem;
+                border: var(--border);
+                color: var(--white);
+                background: none;
+                margin: 1rem 0;
+                font-size: 1.6rem;
+
+            }
+            .share{
+                margin-top: 1.5rem;
+                a{
+                    height: 4.5rem;
+                    width:  4.5rem;
+                    line-height: 4.5rem;
+                    font-size: 2rem;
+                    background-color: var(--white);
+                    color: var(--black);
+                    margin-right: 0.5rem;
+                    text-align: center;
+                    &:hover{
+                        background-color: var(--blue);
+                        column-rule-color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+    .credit{
+        text-align: center;
+        @include title-text(2rem);
+        padding-top: 2rem;
+        margin-top: 2rem;
+        border-top: var(--border);
+
+        span{
+            color: var(--blue);
+        }
+
+    }
+}

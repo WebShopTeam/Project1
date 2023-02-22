@@ -1,0 +1,31 @@
+section{
+    padding: 3rem 9%;
+    @media screen and (max-width:1200px){
+        padding: 3rem 2rem;
+    }
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    &:hover{
+        background-color: var(--white);
+        color: var(--black);
+    }
+}
+.heading{
+    text-align: center;
+    padding-bottom: 3rem;
+    color: var(--white);
+    @include title-text(3rem);
+    text-transform: uppercase;
+
+    span{
+        color: var(--blue);
+        font-weight: lighter;
+    }
+}

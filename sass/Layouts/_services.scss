@@ -1,0 +1,42 @@
+.services{
+    .box-container{
+        @include grid(31rem);
+        .box{
+            text-align: center;
+            padding: 3rem;
+            background-color: var(--light-bg);
+            &:nth-child(even){
+                background-color: var(--light-bg);
+                border-radius: 0.5rem;
+            }
+            &:hover{
+                background-color: var(--blue);
+                i{
+                    transform: translateY(-1rem);
+                    background-color: var(--white);
+                    color: var(--blue);
+                }
+                p{
+                    color: #eee;
+                }
+            }
+            i{
+                height: 6rem;
+                width: 6rem;
+                line-height: 6rem;
+                border-radius: 50%;
+                font-size: 2rem;
+                color: var(--white);
+                background-color: var(--blue);
+                margin-bottom: 1rem;
+            }
+            h3{
+                @include title-text(2rem)
+            }
+            p{
+                @include graph-text(1.6rem);
+                padding-bottom: 0;
+            }
+        }
+    }
+}

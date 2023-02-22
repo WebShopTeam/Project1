@@ -1,0 +1,18 @@
+@mixin title-text($titleVal){
+    font-size: $titleVal;
+    color: var(--white);
+    text-transform: capitalize;
+}
+@mixin graph-text($graphVal){
+    font-size: $graphVal;
+    color: var(--light-color);
+    line-height: 2;
+    // text-transform: capitalize;
+    padding: 1.5rem 0;
+}
+
+@mixin grid($value){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($value,1fr));
+    gap: 2rem;
+}

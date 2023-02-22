@@ -1,0 +1,26 @@
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    .img{
+        flex: 1 1 42rem;
+        img{
+            width: 100%;
+        }
+    }
+    .content{
+        flex: 1 1 42rem;
+        span{
+            font-size: 2rem;
+            color: var(--blue);
+        }
+        h3{
+            @include title-text(3.5rem);
+            padding-top: 1.5rem;
+        }
+        p{
+            @include graph-text(1.6rem)
+        }
+    }
+}

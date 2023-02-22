@@ -1,0 +1,19 @@
+.gallery{
+    .box-container{
+        columns: 25rem 3;
+        gap: 1.5rem;
+        .box{
+            width: 100%;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border:1px solid var(--white);
+            margin-bottom: 1.5rem;
+            background-color: var(--blue);
+            img{
+                width: 100%;
+                border-radius: 0.5rem;
+                
+            }
+        }
+    }
+}
